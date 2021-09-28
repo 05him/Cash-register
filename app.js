@@ -19,12 +19,14 @@ resetBtn.style.display="none";
 table.style.display="none";
 footer.style.marginTop="43vh";
 function checkBillAmount(amount){
+    table.style.display="none";
     if(amount<0){p.innerText="🚫Bill amount cant be negative🚫"; return false;}
     else if (amount==="0"){p.innerText="🚫Bill amount cant be zero🚫"; return false;}
     else if (amount===""){p.innerText="🚫Pls Enter Bill Amount🚫"; return false;}
     return true;
 }
 function checkCashGiven(amount){
+    table.style.display="none";
      if(amount<0){p.innerText="🚫Cash Given cant be negative🚫"; return false;}
     else if(amount===""){p.innerText="🚫Pls Enter Cash Given🚫"; return false;}
     else if(amount==="0"){p.innerText="Cash Given Cant be Zero Untill  and unless you are willing to wash plates"; return false;}
@@ -43,10 +45,10 @@ footer.style.marginTop="37vh";
 })
 checkBtn.addEventListener('click',()=>{
     footer.style.marginTop="30vh";
-    if(checkCashGiven(cashGiven.value)){
+    if(checkBillAmount(billAmount.value) && checkCashGiven(cashGiven.value)  ){
         resetBtn.style.display="inline";
-        if(Number(billAmount.value)>Number(cashGiven.value)){p.innerText="Seems like u waana wash plates";}
-        else if (billAmount.value===cashGiven.value){p.innerText="Ahh!! Thats why we peoples used to say don't skip classes in KinderGarden"}
+        if(Number(billAmount.value)>Number(cashGiven.value)){ table.style.display="none"; p.innerText="Seems like u waana wash plates";}
+        else if (billAmount.value===cashGiven.value){ table.style.display="none"; p.innerText="Ahh!! Thats why we peoples used to say don't skip classes in KinderGarden"}
         else{
                     p.style.color="black";
                     thinking.style.display="inline";
