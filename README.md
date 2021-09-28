@@ -3,6 +3,7 @@
 This app works while taking two inputs(the cash given and the total bill amount) and will tell u the amount u will get in return and also the no of notes u will get.
 Hope u enjoy it ;).
 
-Live url:-
+Live url:- https://05him.github.io/Cash-register/
+
 
 
