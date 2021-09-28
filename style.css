@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100vh;
+}
+h1 {
+  background-color: black;
+  color: white;
+  margin-top: 0;
+  font-size: 50px;
+  padding: 1rem;
+}
+label,
+input {
+  display: block;
+  margin: auto;
+}
+label {
+  font-size: 35px;
+  margin: 2rem auto 0.5rem;
+}
+input {
+  font-size: 15px;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 300px;
+}
+button {
+  cursor: pointer;
+  margin-top: 2.7rem;
+  font-size: 16px;
+  background-color: black;
+  border: 2px solid black;
+  padding: 0.3rem;
+  width: 100px;
+  color: white;
+  border-radius: 0.5rem;
+}
+#reset-btn {
+  background-color: white;
+  color: black;
+}
+button:hover {
+  font-size: 20px;
+}
+p {
+  font-size: 29px;
+}
+
+table {
+  font-size: 20px;
+  margin-left: 50%;
+  transform: translateX(-360px);
+}
+td {
+  padding: 0.5rem;
+  border: 1px solid black;
+  width: 50px;
+}
+
+footer {
+  background-color: black;
+  height: 10%;
+  color: white;
+  padding: 2.5rem;
+  text-align: center;
+}
+div {
+  transform: translateX(1.5rem);
+}
+li {
+  display: inline;
+  margin: 1rem;
+  cursor: pointer;
+}
+a {
+  color: white;
+  font-size: 16px;
+}
+a:hover {
+  font-size: 20px;
+}
